@@ -6,6 +6,8 @@ import banner from "./assets/illustration3.png";
 import { useCallback } from "react";
 import { useEffect } from "react";
 
+//DO NPM RUN DEPLOY TO DEPLOY TO GITHUB PAGES
+
 export default function App() {
   const baseItems = [
     { text: "Watch a video", color: "#FF0000" },
