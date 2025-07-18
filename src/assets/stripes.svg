@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-dasharray: 80 5;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        stroke-dasharray: 20 5 30 5 800;
+      }
+
+      .cls-4 {
+        stroke-dasharray: 20 5 10 5 800;
+      }
+
+      .cls-5 {
+        stroke-dasharray: 20 5 800;
+      }
+
+      .cls-6 {
+        stroke-dasharray: 50 5;
+      }
+    </style>
+  </defs>
+  <line class="cls-2" x1="-20" y1="100.33" y2=".33"/>
+  <line class="cls-2" x1="-10" y1="100.33" x2="10" y2=".33"/>
+  <line class="cls-4" y1="100.33" x2="20" y2=".33"/>
+  <line class="cls-2" x1="10" y1="100.33" x2="30" y2=".33"/>
+  <line class="cls-1" x1="20" y1="100.33" x2="40" y2=".33"/>
+  <line class="cls-3" x1="30" y1="100.33" x2="50" y2=".33"/>
+  <line class="cls-2" x1="40" y1="100.33" x2="60" y2=".33"/>
+  <line class="cls-5" x1="50" y1="100.33" x2="70" y2=".33"/>
+  <line class="cls-2" x1="60" y1="100.33" x2="80" y2=".33"/>
+  <line class="cls-2" x1="70" y1="100.33" x2="90" y2=".33"/>
+  <line class="cls-6" x1="80" y1="100.33" x2="100" y2=".33"/>
+  <line class="cls-2" x1="90" y1="100.33" x2="110" y2=".33"/>
+  <line class="cls-2" x1="100" y1="100.33" x2="120" y2=".33"/>
+</svg>
