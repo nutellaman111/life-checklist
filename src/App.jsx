@@ -154,7 +154,7 @@ function ProgressButton({ completed, total }) {
   const [copied, setCopied] = React.useState(false); // also make sure useState is imported
 
   const handleCopy = () => {
-    const text = `I completed ${completed}/${total} items on the chronically online life checklist.`;
+    const text = `I completed ${completed}/${total} items on the chronically online life checklist https://nutellaman111.github.io/online-checklist`;
 
     navigator.clipboard.writeText(text).then(() => {
       setCopied(true);
