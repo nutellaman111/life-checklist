@@ -4,6 +4,7 @@ import "./App.css";
 import stripes from "./assets/stripes.png";
 import banner from "./assets/illustration3.png";
 import { useCallback } from "react";
+import { useEffect } from "react";
 
 export default function App() {
   const baseItems = [
@@ -66,9 +67,35 @@ export default function App() {
     { text: "Post on 4chan", color: "#36a16fff" },
   ];
 
-  const [items, setItems] = useState(
-    baseItems.map((item) => ({ ...item, completed: false }))
-  );
+  const [items, setItems] = useState(() => {
+    // Try to load saved completed states from localStorage
+    const saved = localStorage.getItem("checklistItems");
+    let savedStatuses = {};
+
+    if (saved) {
+      try {
+        savedStatuses = JSON.parse(saved);
+      } catch {
+        savedStatuses = {};
+      }
+    }
+
+    // Build items by copying baseItems and applying saved completed states
+    return baseItems.map((item) => ({
+      ...item,
+      completed: savedStatuses[item.text] || false,
+    }));
+  });
+
+  useEffect(() => {
+    // Save only the completed states keyed by text
+    const toSave = {};
+    items.forEach((item) => {
+      toSave[item.text] = item.completed;
+    });
+
+    localStorage.setItem("checklistItems", JSON.stringify(toSave));
+  }, [items]);
 
   const toggle = useCallback((index) => {
     setItems((prev) =>

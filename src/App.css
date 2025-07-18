@@ -266,6 +266,8 @@ body.wide #checklist {
   color: #ffffff;
   font-size: 16px;
   border: 2px solid var(--purple);
+  width: 80px;
+  justify-content: center;
 }
 
 .progress-button:hover {
