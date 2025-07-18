@@ -63,7 +63,7 @@ export default function App() {
     { text: "Get 1m likes on something", color: "#ff3700ff" },
     { text: "Use Tor", color: "#8d99ae" },
     { text: "Visit dark web", color: "#000000ff" },
-    { text: "Post on 4chan", color: "#3ba373ff" },
+    { text: "Post on 4chan", color: "#36a16fff" },
   ];
 
   const [items, setItems] = useState(
